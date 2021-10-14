@@ -1,0 +1,54 @@
+git init
+git status
+
+git config --global user.name "chandana"
+git config --global user.email "harichandana.sai"
+
+git config --list
+
+remove: git config --unset --user.name
+        git config --unset --user.email
+  git config --list
+-------------------------------------------------------
+ 
+~ ls
+~ ls -a
+~touch file1
+~ls
+file1
+git status(untracked file: red clr file1== it is in workspace phase)
+~git add file1
+git status(tracked file: green clr file1== it is in staging/index phase)
+~git commit -m "label" file1
+               ("commit data1")
+git status(dont show anything== it is in local repository)
+git log
+git show cid(select the above logid and( to enter within git show press"shift-insert" and come to the command))
+============= if we r adding number of files=======
+clear
+ls
+touch file2 file3
+~ls
+file2 file3
+git status
+~git add file2 file3
+or
+git add*
+or
+git add.
+or
+git add -A
+git status
+git commit -m "label"
+git log
+git show cid
+
+=============Pushing data to central repository=====
+git clone https://github.com/chandana203/Amazon.git
+ls
+cd flipkart
+touch devops
+git add chandana
+git commit -m "1st commit"
+git push
+
