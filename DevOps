@@ -51,4 +51,4 @@ touch devops
 git add chandana
 git commit -m "1st commit"
 git push
-
+ git commands for Practise
